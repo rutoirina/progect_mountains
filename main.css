@@ -1,0 +1,111 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: Exo Thin; /* Имя шрифта */
+    src: url(fonts/Exo-Thin.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Exo Regular;
+    src: url(fonts/Exo-Regular.ttf);
+}
+/* Убираем дефолтные настройки */
+body {
+	margin: 0;
+	background-color: #282828;
+}
+
+.main {
+	background: #fff;
+	width: 1440px;
+	margin: 0 auto;
+}
+/* Стили шапки */
+.header {
+	height: 813px;
+	background-image: url(img/header-bg.jpg);
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
+ 	flex-direction: column;
+}
+
+.header-title {
+	font-family: Exo Thin;
+	font-size: 60px;
+	width: 750px;
+	text-align: center;
+	line-height: 75px;
+	color: #282828;
+}
+/* Стили кнопок */
+.button {
+	background-color: none;
+	border: 0;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.header-button-play {
+	position: relative;
+	height: 60px;
+	width: 60px;
+	background-color: #8286a3;
+	border-radius: 50%;
+	line-height: 0;
+	font-size: 0;
+	transition: 0.4s;
+}
+
+.header-button-play::after {
+	position: absolute;
+	display: inline-block;
+	left: 23px;
+	top: 20.5px;
+	content: ''; 
+	border-top: 10px solid transparent;
+	border-left: 20px solid #f5f6f8;
+	border-bottom: 10px solid transparent;
+	transition: 0.4s;
+}
+
+.header-button-play:hover {
+	background-color: #ff6d6d;
+}
+ .header-button-play:hover::after {
+ 	transform: scale(1.2);
+}
+
+.button-primary {
+	border-radius: 3px;
+	height: 50px;
+	width: 190px;
+	background-color: #ff6d6d;
+	font-family: Exo Regular;
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 50px;
+	transition: 0.4s;
+}
+
+.button-primary:hover {
+	background-color: #8286a3;
+}
+
+.button-header {
+	margin-top: 40px;
+}
+
+.header-details {
+	color: #282828;
+	font-family: Exo Regular;
+	font-size: 14px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	opacity: 0.6;
+}
+
+
