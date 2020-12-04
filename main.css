@@ -4,6 +4,10 @@
     src: url(fonts/Exo-Thin.ttf); /* Путь к файлу со шрифтом */
 }
 @font-face {
+    font-family: Exo Medium; /* Имя шрифта */
+    src: url(fonts/Exo-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
     font-family: Exo Regular;
     src: url(fonts/Exo-Regular.ttf);
 }
@@ -11,6 +15,10 @@
 body {
 	margin: 0;
 	background-color: #282828;
+}
+
+span {
+	color: #ff6d6d
 }
 
 .main {
@@ -36,6 +44,15 @@ body {
 	text-align: center;
 	line-height: 75px;
 	color: #282828;
+}
+
+.header-details {
+	color: #282828;
+	font-family: Exo Regular;
+	font-size: 14px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	opacity: 0.6;
 }
 /* Стили кнопок */
 .button {
@@ -73,6 +90,7 @@ body {
 .header-button-play:hover {
 	background-color: #ff6d6d;
 }
+
  .header-button-play:hover::after {
  	transform: scale(1.2);
 }
@@ -99,13 +117,67 @@ body {
 	margin-top: 40px;
 }
 
-.header-details {
-	color: #282828;
-	font-family: Exo Regular;
-	font-size: 14px;
-	margin-top: 20px;
-	padding-bottom: 30px;
-	opacity: 0.6;
+/* Стили секции */
+.section-platform {
+	white-space: nowrap;
+	font-size: 0;
 }
 
+.section-content {
+	box-sizing: border-box;
+	padding-top: 190px;
+	padding-left: 150px;
+	padding-right: 150px;
+	width: 870px;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+}
+
+.section-img {
+	position: relative;
+	padding: 92px 0;
+	width: 570px;
+	display: inline-block;
+	vertical-align: top;
+	background: #ededed;
+	text-align: center;
+}
+
+.section-img::after {
+	position: absolute;
+	display: inline-block;
+	content: ''; 
+	right: 0;
+	bottom: 0;
+	border-left: 570px solid transparent;
+	border-bottom: 490px solid rgba(255,138,138,0.58);
+}
+
+.section-theme {
+	color: #ff6d6d;
+	font-family: Exo Medium;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 50px;
+}
+
+.section-title {
+	color: #282828;
+	font-family: Exo Medium;
+	font-size: 40px;
+	letter-spacing: 0.4px;
+	line-height: 50px;
+}
+
+.section-text {
+	margin: 0;
+	font-family: Exo Medium;
+	padding-top: 45px;
+	color: rgba(40,40,40,0.66);
+	font-size: 16px;
+	letter-spacing: 0.4px;
+	line-height: 26px;
+}
 
