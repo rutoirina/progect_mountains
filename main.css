@@ -21,7 +21,15 @@ span {
 	color: #ff6d6d
 }
 
+p {
+	margin: 0;
+}
 .main {
+	font-family: Exo Medium;
+	color: rgba(40,40,40,0.66);
+	font-size: 16px;
+	letter-spacing: 0.4px;
+	line-height: 26px;
 	background: #fff;
 	width: 1440px;
 	margin: 0 auto;
@@ -117,7 +125,7 @@ span {
 	margin-top: 40px;
 }
 
-/* Стили секции */
+/* Стили секции  Platform*/
 .section-platform {
 	white-space: nowrap;
 	font-size: 0;
@@ -163,6 +171,10 @@ span {
 	line-height: 50px;
 }
 
+.section-theme-center {
+	text-align: center;
+}
+
 .section-title {
 	color: #282828;
 	font-family: Exo Medium;
@@ -171,13 +183,60 @@ span {
 	line-height: 50px;
 }
 
+.section-title-center {
+	text-align: center;	
+}
+
 .section-text {
 	margin: 0;
-	font-family: Exo Medium;
 	padding-top: 45px;
-	color: rgba(40,40,40,0.66);
 	font-size: 16px;
-	letter-spacing: 0.4px;
-	line-height: 26px;
 }
+
+/* Стили секции  Features*/
+.section-features {
+	overflow: hidden;
+	position: relative;
+	background: #f6f5f3;
+	padding-top: 123px;
+}
+
+.section-block-list {
+	display: flex;
+	padding: 0 130px;
+	padding-bottom: 90px;
+}
+
+.section-block {
+	margin: 90px 25px;
+	text-align: center;
+}
+
+.section-block-title {
+	padding-top: 14px;
+	font-size: 22px;
+	color: #282828;
+	line-height: 50px;
+}
+
+.section-features-pen {
+	position: absolute;
+	left: 85px;
+	top: -15px;
+}
+
+.section-features-earphones {
+	position: absolute;
+	right: 140px;
+	top: -33px;
+}
+
+.section-features-cup {
+	position: absolute;
+	right: 50px;
+	bottom: -138px;
+}
+
+
+
 
