@@ -237,6 +237,52 @@ p {
 	bottom: -138px;
 }
 
+/* Стили секции  Design*/
+.section-design-img {
+	position: relative;
+	padding-left: 40px;
+	padding-bottom: 90px;
+	padding-top: 90px;
+	display:inline-block;
+	vertical-align: top;
+	z-index: 1;
+}
+
+.section-content-design {
+	vertical-align: top;
+	display: inline-block;
+	padding-top: 120px;
+	padding-bottom: 136px;
+	padding-left: 60px;
+	width: 500px;
+}
+
+.section-design {
+	display: flex;
+	align-items: center;
+  	justify-content: flex-start;
+	overflow: hidden;
+	position: relative;
+ }
+
+.section-design::after {
+	position: absolute;
+	display: inline-block;
+	content: ''; 
+	left: 0;
+	bottom: 0;
+	border-right: 607px solid transparent;
+	border-bottom: 607px solid #ff8a8a;
+	z-index: 0;
+ }
+
+ .section-design-img-notebook {
+ 	position: absolute;
+ 	left: 132px;
+ 	top: 135px;
+ } 
+
+
 
 
 
