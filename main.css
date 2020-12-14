@@ -188,6 +188,7 @@ p {
 }
 
 .section-text {
+	opacity: 0.66;
 	margin: 0;
 	padding-top: 45px;
 	font-size: 16px;
@@ -205,6 +206,10 @@ p {
 	display: flex;
 	padding: 0 130px;
 	padding-bottom: 90px;
+}
+ 
+.section-block-list p {
+	opacity: 0.66;
 }
 
 .section-block {
@@ -294,6 +299,9 @@ p {
 	padding-top: 110px;
 }
 
+.contact-opacity {
+	opacity: 0.66;
+}
 .contact-block-title {
 	font-style: normal; 
 	font-family: Exo Medium;
@@ -329,7 +337,30 @@ p {
 	padding-bottom: 80px;
 }
 
+/* Стили секции Description*/
 
+.section-description{
+	position: relative;
+}
+
+.section-description-content {
+	margin: 0 auto;
+	text-align: center;
+	width: 670px;
+	padding: 90px 0;
+}
+
+.section-description-img {
+	line-height: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.windows-img {
+ 	position: absolute;
+ 	left: 335px;
+ 	top: 460px;
+ } 
 
 
 
