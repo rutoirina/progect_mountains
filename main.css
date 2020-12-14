@@ -24,6 +24,27 @@ span {
 p {
 	margin: 0;
 }
+
+input {
+	margin: 0 15px;
+	padding: 0;
+	border-width: 1px;
+	border-color: #ffffff;
+	background: #464c77;
+	border-radius: 3px;
+	height: 48px;
+	width: 263px;
+	text-transform: uppercase;
+}
+ input::-webkit-input-placeholder {
+ 	font-family: Exo Regular;
+ 	padding-left: 25px;
+    color:#f6f5f3;
+    font-size: 15px;
+	letter-spacing: 0.4px;
+	line-height: 75px;
+} 
+
 .main {
 	font-family: Exo Medium;
 	color: rgba(40,40,40,0.66);
@@ -361,6 +382,74 @@ p {
  	left: 335px;
  	top: 460px;
  } 
+/* Стили секции Registration*/
 
+.section-registration {
+	background: #323969;
+}
 
+.section-registration .section-title {
+	color: #ffffff;
+}
+
+.section-registration-content {
+	padding-top: 95px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section-registration-link {
+	font-family: Exo Regular;
+	font-size: 16px;
+	letter-spacing: 0.4px;
+	line-height: 75px;
+	text-align: center;
+	color: #f6f5f3;
+	opacity: 0.6;
+	padding-top: 50px;
+	padding-bottom: 85px;
+}
+
+.section-registration-link a {
+	font-family: Exo Regular;
+	font-size: 16px;
+	letter-spacing: 0.4px;
+	line-height: 75px;
+	color: #f6f5f3;
+	opacity: 0.6;
+}
+
+.section-registration-log .button-primary {
+	width: 258px;
+	margin-left: 15px;
+	box-shadow: 0 3px 3px rgba(14,15,15,0.25);
+}
+ 
+.section-registration-log {
+	position: relative;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.log-help {
+	position: absolute;
+	top: 40px;
+	right: 195px;
+	font-family: Exo Regular;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	font-style: italic;
+	color: #f6f5f3;
+}
+
+.log-help::before {
+	position: absolute;
+	top: 5px;
+	left: -35px;
+	background: url(img/ARROW.png);
+	content: '';
+	height: 41px;
+	width: 56px;
+
+}
 
