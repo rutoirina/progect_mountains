@@ -36,7 +36,8 @@ input {
 	width: 263px;
 	text-transform: uppercase;
 }
- input::-webkit-input-placeholder {
+
+input::-webkit-input-placeholder {
  	font-family: Exo Regular;
  	padding-left: 25px;
     color:#f6f5f3;
@@ -44,6 +45,15 @@ input {
 	letter-spacing: 0.4px;
 	line-height: 75px;
 } 
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
 
 .main {
 	font-family: Exo Medium;
@@ -451,5 +461,129 @@ input {
 	height: 41px;
 	width: 56px;
 
+}
+
+/*Стили Footer */
+
+.footer {
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	padding-left: 150px;
+	padding-right: 300px;
+	padding-top: 80px;
+	height: 330px;
+}
+
+.footer::after {
+	position: absolute;
+	display: inline-block;
+	content: ''; 
+	right: 0;
+	top: 0;
+	border-left: 330px solid transparent;
+	border-top: 330px solid rgba(255, 138, 138, 0.8);
+	z-index: 0;
+}
+
+.section-footer-about {
+	width: 255px;
+}
+
+.section-footer-about p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #282828;
+	opacity: 0.56;
+}
+
+.section-footer-support {
+	width: 90px;
+	padding-left: 65px;
+	padding-right: 55px;
+}
+
+.section-footer-about-us {
+	width: 110px;
+	padding-left: 55px;
+	padding-right: 45px;
+}
+
+.section-footer-get-newsletter {
+	position: relative;
+	padding-left: 45px;
+	width: 270px;
+	z-index: 1;
+}
+
+.footer-list a {
+	text-decoration: none;
+	font-family: Exo Regular;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	line-height: 30px;
+	color: #282828;
+	opacity: 0.66;
+}
+
+.footer-title {
+	color: #282828;
+	font-family: Exo Medium;
+	font-size: 22px;
+	line-height: 50px;
+	letter-spacing: 0.4px;
+}
+
+.footer-input {
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	border-width: 1px;
+	border-color: rgba(78,78,94, 0.4);
+	background: rgba(141,141,141, 0.2);
+	border-radius: 3px 0 0 3px;
+	height: 48px;
+	width: 213px;
+	text-transform: uppercase;
+}
+.footer-input::-webkit-input-placeholder {
+	font-family: Exo Regular;
+	color: rgba(78,78,94, 0.4);
+	font-size: 15px;
+	letter-spacing: 0.4px;
+	line-height: 75px;
+} 
+
+.button-footer {
+	border-radius: 0 3px 3px 0;
+	height: 50px;
+	width: 50px;
+	background-color: #ff6d6d;
+	transition: 0.4s;
+	font-size: 0px;
+	vertical-align: top;
+	box-shadow: 0 3px 3px rgba(14,15,15,0.25);
+}
+
+.button-footer:hover {
+	background-color: #8286a3;
+	transition: 0.4s;
+}
+
+.section-footer-send {
+	font-size: 0px;
+	padding-bottom: 15px;
+}
+
+.footer-social-links {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 45px;
+	padding-right: 60px;
+}
+
+.footer-social-links a:hover {
+	transform: scale(1.2);
+	transition: 0.4s;
 }
 
